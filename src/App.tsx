@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Toaster } from "@/components/ui/toaster";
-import LoginPage from "@/pages/Login";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
   return (
@@ -8,7 +7,6 @@ function App() {
       <Routes>
         <Route path="/" element={<LoginPage />} />
       </Routes>
-      <Toaster />
     </BrowserRouter>
   );
 }
