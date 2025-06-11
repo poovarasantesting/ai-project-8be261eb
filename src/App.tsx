@@ -1,16 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./pages/Login";
-import { Toaster } from "./components/ui/toaster";
+import ContactPage from "./pages/Contact";
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
-      <Toaster />
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<ContactPage />} />
       </Routes>
     </BrowserRouter>
   );
 }
-
-export default App;
